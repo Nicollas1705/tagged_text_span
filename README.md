@@ -231,9 +231,11 @@ Code example: `TaggedTextSpan.generate('some text', const []);`
 
 ### `checkIfTextTagsIsValid`
 
- Used to check if a given `text` has a correct sequence of opening/closing tags following `tags` (a list of `TextTags`).
+Used to check if a given `text` has a correct sequence of opening/closing tags following `tags` (a list of `TextTags`).
 
 Note: this is the method used to validate the `text` and set `isTextTagsValid` when `ignoreTextTagsCheckingComputation` is `false`.
+
+Code example: `TaggedTextSpan.checkIfTextTagsIsValid('some text', const []);`
 
 
 <!-- TODO
