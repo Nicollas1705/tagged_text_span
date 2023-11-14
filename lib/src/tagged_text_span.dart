@@ -131,7 +131,7 @@ class TaggedTextSpan extends TextSpan {
   static List<InlineSpan> generate(String text, List<TextTag> tags) =>
       _delegate.generate(text, tags);
 
-  /// Used to check if a [text] has a corrent sequence of opening/closing tags following [tags].
+  /// Used to check if a [text] has a correct sequence of opening/closing tags following [tags].
   ///
   /// Check [isTextTagsValid] out.
   static bool checkIfTextTagsIsValid(String text, List<TextTag> tags) =>
