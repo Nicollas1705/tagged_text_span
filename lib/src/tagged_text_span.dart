@@ -45,7 +45,7 @@ class TaggedTextSpan extends TextSpan {
     super.spellOut,
   });
 
-  /// Generate a [TextSpan] with the correct config according to its [TextTag].
+  /// Generates a [TextSpan] with the correct config according to its [TextTag].
   ///
   /// If [useDefaultTags] is true, then [defaultTags] (check this out) will be added to [tags].
   ///
@@ -120,14 +120,14 @@ class TaggedTextSpan extends TextSpan {
         )),
   ];
 
-  /// Check either the text has correct tags or not, checking its ordering of opening and closing.
+  /// Checks either the text has correct tags or not, checking its ordering of opening and closing.
   ///
   /// Examples considering the [defaultTags] :
   /// - Valid text: `Text **bold and //italic//**`
   /// - Invalid text: `Text **bold and //italic**//` (bold closing in wrong sequence)
   final bool isTextTagsValid;
 
-  /// Genereate a [InlineSpan] list accordint to [TextTag]s.
+  /// Genereates a [InlineSpan] list according to [TextTag]s.
   static List<InlineSpan> generate(String text, List<TextTag> tags) =>
       _delegate.generate(text, tags);
 
